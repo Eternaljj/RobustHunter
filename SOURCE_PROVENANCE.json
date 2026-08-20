@@ -1,0 +1,38 @@
+{
+  "artifact": "RobustHunter Stage-3 Graph Matching",
+  "artifact_version": "0.1.0",
+  "prepared_date": "2026-08-20",
+  "repository": "https://github.com/Eternaljj/RobustHunter",
+  "manuscript": {
+    "title": "RobustHunter: Limiting Error Propagation in Threat Hunting Under Uncertain Query Graphs",
+    "sha256": "5d341d129b618ef419fee7038ceaab839c894f079cf6020332e74fe06bd4f6d0",
+    "stage3_equations": "(6)-(30), (46)-(55)"
+  },
+  "core_source_policy": "byte-identical copies from the current experiment implementation",
+  "core_sources": {
+    "src/robusthunter/method_contract.py": {
+      "source": "robusthunter/method_contract.py",
+      "sha256": "81006aa478771754cb7dc8648d445611325628e7a640655d4928382f7a0178f6"
+    },
+    "src/robusthunter/rewritten/contracts.py": {
+      "source": "robusthunter/rewritten/contracts.py",
+      "sha256": "e43fd9882287f890d28d8a50160ad4c88bb58abbbd6449fc53798dc4392edbbb"
+    },
+    "src/robusthunter/rewritten/rgat.py": {
+      "source": "robusthunter/rewritten/rgat.py",
+      "sha256": "af34b401ab27725bb8e947f79dbb2325b80d2c78f40f5b98f0d2c0a985477128"
+    },
+    "src/robusthunter/rewritten/alignment.py": {
+      "source": "robusthunter/rewritten/alignment.py",
+      "sha256": "157e63728fac63bb85b2d6191a1da54618817907f3edb75e1815fd5de5c3fa9c"
+    },
+    "src/robusthunter/rewritten/behavior_consistency.py": {
+      "source": "robusthunter/rewritten/behavior_consistency.py",
+      "sha256": "aa01913743301716263106f20d5d23ede3ae657a72a7004f1b87bfdeff24812e"
+    },
+    "src/robusthunter/rewritten/matcher.py": {
+      "source": "robusthunter/rewritten/matcher.py",
+      "sha256": "60ccf81327fc9c37f823ce7b3c9c8bba33fbe6cc48f24b4ea03128f6d2f5d161"
+    }
+  }
+}

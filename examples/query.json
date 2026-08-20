@@ -1,0 +1,20 @@
+{
+  "query_id": "paper_smoke_query",
+  "behavior_graph": {
+    "nodes": [
+      {"id": "q_process", "type": "Process", "name": "loader"},
+      {"id": "q_file", "type": "File", "path": "/tmp/payload.bin"},
+      {"id": "q_child", "type": "Process", "name": "payload"}
+    ],
+    "edges": [
+      {"id": "q_write", "source": "q_process", "target": "q_file", "relation": "write"},
+      {"id": "q_exec", "source": "q_file", "target": "q_child", "relation": "exec"}
+    ]
+  },
+  "attack_instances": [
+    {"id": "instance_1", "behavior_edge_ids": ["q_write", "q_exec"]}
+  ],
+  "instance_to_stage": {
+    "instance_1": ["Establish Foothold"]
+  }
+}

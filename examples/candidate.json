@@ -1,0 +1,17 @@
+{
+  "candidate_id": "paper_smoke_candidate",
+  "nodes": [
+    {"row_id": "10", "type": "1", "name": "loader"},
+    {"row_id": "20", "type": "0", "path": "/tmp/payload.bin"},
+    {"row_id": "30", "type": "1", "name": "payload"}
+  ],
+  "edges": [
+    {"hash_id": "c_write", "src": "10", "dst": "20", "relation": "write", "time": 1.0},
+    {"hash_id": "c_exec", "src": "20", "dst": "30", "relation": "exec", "time": 2.0}
+  ],
+  "paths": [
+    {"edge_ids": ["c_write"]},
+    {"edge_ids": ["c_write", "c_exec"]},
+    {"edge_ids": ["c_exec"]}
+  ]
+}

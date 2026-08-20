@@ -1,0 +1,18 @@
+{
+  "schema_version": "robusthunter-graph-matching-config-v1",
+  "model": {
+    "attribute_dim": 64,
+    "hidden_dim": 64,
+    "layers": 2,
+    "top_k": 3,
+    "threshold": 0.5,
+    "lambda_entity": 0.4,
+    "lambda_behavior": 0.5,
+    "lambda_null": 0.1,
+    "mu_instance": 1.0,
+    "mu_stage": 1.0,
+    "null_baseline_init": 0.0,
+    "beta_stage": 0.2,
+    "variant": "Full"
+  }
+}
